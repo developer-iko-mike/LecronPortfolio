@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazir.ttf), url(./assets/fonts/Vazir.woff), url(./assets/fonts/Vazir.woff2);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazir-Bold.ttf), url(./assets/fonts/Vazir-Bold.woff), url(./assets/fonts/Vazir-Bold.woff2),
+        url(./assets/fonts/Vazir-Bold.eot);
+    font-style: bold;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazir-Thin.ttf), url(./assets/fonts/Vazir-Thin.woff), url(./assets/fonts/Vazir-Thin.woff2),
+        url(./assets/fonts/Vazir-Thin.eot);
+    font-style: thin;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazir-Light.ttf), url(./assets/fonts/Vazir-Light.woff), url(./assets/fonts/Vazir-Light.woff2),
+        url(./assets/fonts/Vazir-Light.eot);
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url(./assets/fonts/Vazir-Medium.ttf), url(./assets/fonts/Vazir-Medium.woff), url(./assets/fonts/Vazir-Medium.woff2),
+        url(./assets/fonts/Vazir-Medium.eot);
+    font-style: normal;
+    font-weight: 500;
+}
+
+:root {
+    --backgroundColor: #202336;
+    --mainColor: #b388ff;
+    --mainColor100: rgba(179, 136, 255, 0.1);
+    --darkMainColor: #3a2d52;
+    --lightColor: #f3e5f5;
+    --darkColor: #202336;
+    --grayColor: #777777;
+}
+
+.light-theme {
+    --backgroundColor: #f3e5f5;
+    --mainColor: #b388ff;
+    --mainColor100: rgba(179, 136, 255, 0.1);
+    --darkMainColor: #3a2d52;
+    --lightColor: #202336;
+    --darkColor: #f3e5f5;
+    --grayColor: #777777;
+}
+
+.light-theme .fixed__navbar svg path {
+    fill: #f3e5f5 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all ease 300ms;
+    font-family: "Vazir";
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    direction: rtl;
+    background: var(--backgroundColor);
+    overflow-x: hidden;
+}
+
+svg {
+    display: block;
+}
+
+svg path {
+    fill: var(--lightColor);
+}
+
+.main-btn {
+    color: var(--lightColor);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.main-btn-md {
+    padding: 0.5rem 0.8rem !important;
+}
+
+.main-btn-purple {
+    background: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.main-btn-purple:hover {
+    background: transparent;
+}
+
+.main-btn-purple-outline {
+    border: 1px solid var(--mainColor);
+}
+
+.main-btn-purple-outline:hover {
+    background: var(--mainColor);
+}
+
+.sections__header-title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sections__header-title div:first-child {
+    background-color: var(--mainColor);
+    flex: 1;
+    height: 5px;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.sections__header-title div:last-child {
+    background-color: var(--mainColor);
+    flex: 1;
+    height: 5px;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.sections__header-title .middle__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.sections__header-title .middle__inner p:first-child {
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--lightColor);
+    opacity: 0.9;
+}
+
+.sections__header-title .middle__inner p:last-child {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--mainColor);
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--lightColor);
+}
+
+.description {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--lightColor);
+    opacity: 0.75;
+    line-height: 1.75rem;
+}

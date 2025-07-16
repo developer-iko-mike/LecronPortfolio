@@ -1,0 +1,607 @@
+/* Section lecron__header & lecron */
+
+.lecron__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+.lecron__header .themeChanger svg {
+    cursor: pointer;
+}
+
+.lecron__header .themeChanger .item {
+    display: none;
+}
+
+.lecron__header .themeChanger .item.active {
+    display: block;
+}
+
+.brandText svg path {
+    fill: var(--mainColor);
+}
+
+.lecron__homebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: var(--lightColor);
+    height: 100vh;
+    justify-content: space-around;
+    position: relative;
+}
+
+.homebar__texts .texts {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.homebar__texts .texts p,h2 {
+    transition: 0ms !important;
+}
+
+.homebar__image img {
+    height: 50vh;
+}
+
+
+
+.social__media {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 12%;
+    top: 90%;
+    transform: translate(-12%, -90%);
+    gap: 1rem;
+}
+
+
+
+.social__media a {
+    width: 3rem;
+    height: 3rem;
+}
+
+.social__media a img {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll__down {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: var(--lightColor);
+    font-size: 10px;
+    right: 12%;
+    top: 90%;
+    transform: translate(12%, -90%);
+}
+
+
+
+.fixed__navbar {
+    position: fixed;
+    display: flex;
+align-items: center;
+background-color: var(--darkMainColor);
+gap: 1rem;
+padding: 1.25rem 1.5rem;
+border-radius: 1rem;
+z-index: 101;
+top: 98%;
+left: 50%;
+transform: translate(-50%,-98%);
+}
+
+
+
+.fixed__navbar .item {
+    cursor: pointer;
+   padding: 0.5rem;
+   border-radius: 50%;
+}
+
+.fixed__navbar .item.active {
+background-color: var(--mainColor);  
+
+} 
+
+.sections__header-title {
+    display: flex;
+}
+
+.aboutme__inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10rem;
+}
+
+
+
+/* Section aboutme__inner & aboutme */
+
+
+
+.aboutme__inner .right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.aboutme__inner .right::before {
+    position: absolute;
+    content: "";
+    background-color: var(--grayColor);
+    width: 300px;
+    height: 300px;
+    border-radius: 4rem;
+    opacity: 0.04;
+    transform: translate(-50%, -70%) rotate(-45deg);
+    top: 70%;
+    left: 50%;
+}
+
+.aboutme__inner .left img {
+    height: 75vh;
+    border-radius: 4rem;
+}
+
+.aboutme__inner .right .cards {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme__inner .right .cards .card-box {
+    background-color: var(--mainColor100);
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme__inner .right .cards .card-box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.aboutme__inner .right .cards .card-box .content p:first-child {
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+.aboutme__inner .right .cards .card-box .content p:last-child {
+    font-weight: 200;
+    font-size: 13px;
+    color: var(--lightColor);
+    opacity: 0.9;
+}
+
+.aboutme__text {
+    margin-top: 3rem;
+}
+
+.aboutme__text p {
+    color: var(--lightColor);
+    line-height: 3rem;
+    text-align: justify;
+}
+
+.hireme__btn {
+    margin-top: 3rem;
+}
+
+
+
+/* Section my__abilities & my__abilities-inner */
+
+
+
+.my__abilities {
+    padding: 8rem 0;
+}
+
+.my__abilities-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+
+.my__abilities-inner .boxes{
+    width: 20rem;
+    background-color: var(--mainColor100);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.my__abilities-inner .boxes .abilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    text-align: right;
+}
+
+.my__abilities-inner .boxes .abilities div .ability {
+    margin-top: 2rem;
+}
+
+.my__abilities-inner .boxes .ability {
+    display: flex;
+    align-items: center;
+    gap: 0,.25rem;
+}
+
+.my__abilities-inner .boxes .ability .icon svg path {
+    fill: var(--mainColor) !important;
+}
+
+.my__abilities-inner .boxes .ability .content p:first-child {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--lightColor);
+}
+
+.my__abilities-inner .boxes .ability .content p:last-child {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--lightColor);
+    opacity: 0.75;
+}
+
+
+
+/* Section services__inner */
+
+
+
+.services__inner {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+margin-top: 5rem;
+}
+.services__inner .box {
+ background-color: var(--mainColor100);
+ border-radius: 1rem;
+ width: 20rem;
+ text-align: center;
+ padding: 1rem;
+}
+
+.services__inner .box .content {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin: 2rem;
+
+}
+
+.services__inner .box .content .title {
+  font-size: 20px;
+}
+
+.services__inner .box .more-btn {
+color: var(--mainColor);
+display: flex;
+align-items: center;
+gap: 2px;
+padding: 0!important;
+margin: 0 auto;
+}
+
+.services__inner .box .more-btn svg path {
+fill: transparent!important;
+}
+
+.services__inner .box .icon {
+display: flex;
+justify-content: center;
+}
+
+
+
+/* Section portfolio & portfolio__inner */
+
+
+
+.portfolio {
+    margin-top: 8rem;
+}
+
+.portfolio__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.portfolio__inner .portfolio-navbar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0 3rem 0;
+    flex-wrap: wrap;
+}
+
+.portfolio__inner .portfolio-navbar span {
+    color: var(--lightColor);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.portfolio__inner .portfolio-navbar span:hover {
+    background: var(--mainColor100);
+}
+
+.portfolio__inner .portfolio-navbar span.active {
+    background: var(--mainColor);
+}
+
+.portfolio__inner .gallery {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.portfolio__inner .gallery .card {
+    width: 26rem;
+    background: var(--mainColor100);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+
+
+.portfolio__inner .gallery .card.hide {
+    display: none;
+}
+
+.portfolio__inner .gallery .card.active {
+    display: block;
+}
+
+.portfolio__inner .gallery .card .image {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio__inner .gallery .card .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.portfolio__inner .gallery .card .title {
+    font-size: 20px;
+    padding: 0.5rem 0;
+}
+
+.portfolio__inner .gallery .card .more-btn {
+    display: flex;
+    align-items: center;
+    color: var(--mainColor);
+    padding: 0 !important;
+    margin: 0.75rem auto 0 auto;
+}
+
+.portfolio__inner .gallery .card .content .more-btn svg path {
+    fill: transparent;
+}
+
+/* Section feedback & feedback__inner & feedback__inner-card */
+
+.feedback {
+    padding: 5rem 0;
+
+}
+
+.feedback__inner {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
+gap: 2rem;
+width: 900px;
+padding: 5rem 0!important;
+}
+
+
+.feedback__inner-card {
+width: 25rem;
+background-color: var(--mainColor100);
+padding: 1rem;
+border-radius: 2rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.feedback__inner-card img {
+border-radius: 50%;
+height: 6rem;
+width: 6rem;
+object-fit: cover;
+}
+
+.feedback__inner .swiper-pagination {
+gap: 4rem !important;
+}
+
+.feedback__inner .swiper-pagination .swiper-pagination-bullet {
+ background-color: aliceblue !important;
+ border-radius: 0.75rem;
+ padding: 0.15rem 1rem;
+}
+
+.feedback__inner .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--mainColor) !important;
+}
+
+
+
+/* Section contact__me & contact__me-inner & text__contact-me & contact__me-form */
+
+
+
+.contact__me {
+    padding: 8rem 0;
+}
+
+.contact__me-inner {
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.contact__me-inner .box__social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact__me-inner .box__social-media .box {
+    background-color: var(--mainColor100);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: row-reverse;
+}
+
+.contact__me-inner .box__social-media .box svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.contact__me-inner .box__social-media .box p {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--lightColor);
+}
+
+.text__contact-me {
+    padding: 1.5rem 2rem;
+    background-color: rgba(179, 136, 255, 0.5);
+    width: fit-content;
+    margin: 3rem auto;
+    border-radius: 3rem;
+}
+
+.text__contact-me p {
+    font-size: 18px;
+    color: var(--lightColor);
+}
+
+.contact__me-form {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.contact__me-form label {
+    margin-top: 0.75rem;
+    color: var(--mainColor);
+}
+
+.contact__me-form input,
+.contact__me-form textarea {
+    border-bottom: 1px solid var(--mainColor);
+    padding: 1rem 0.5rem;
+    color: var(--mainColor);
+}
+
+.contact__me-form input::placeholder,
+.contact__me-form textarea::placeholder {
+    color: var(--mainColor);
+    opacity: 0.5;
+}
+
+.contact__me-form .main-btn {
+    margin: 2rem 0;
+    width: fit-content;
+    padding: 0.5rem 3rem !important;
+}
+
+.lecron__footer {
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0 7rem 0;
+    gap: 2rem;
+}
+
+
+
+/* Section lecron__footer */
+
+
+
+.lecron__footer .title-header {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.lecron__footer div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lecron__footer div.icons img {
+    height: 5vh;
+    cursor: pointer;
+}
+
+.lecron__footer div span {
+    cursor: pointer;
+}
+
+.lecron__footer .copyright-div {
+    gap: 0.25rem;
+}
+
+.lecron__footer .copyright-div .copyright {
+    height: 2vh;
+}

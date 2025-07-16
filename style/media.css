@@ -1,0 +1,108 @@
+@media (max-width: 1416px) {
+                    .aboutme__inner {
+                        flex-direction: column;
+                        gap: 5rem;
+                    }
+                
+                    .aboutme__inner .right {
+                        align-items: center !important;
+                    }
+                }
+
+
+  @media (max-width: 1416px) {
+                    .my__abilities-inner {
+                        flex-direction: column;
+                    }
+                }
+
+
+    @media (max-width: 1100px) {
+                    .lecron__header {
+                        padding: 1rem !important;
+                    }
+                }
+
+      @media (max-width: 782px) {
+                    .social__media {
+                        display: none;
+                    }
+                }
+
+
+        @media (max-width: 921px) {
+                    .feedback__inner {
+                        width: 100%;
+                    }
+                }
+
+
+          @media (max-width: 782px) {
+                    .scroll__down {
+                        display: none;
+                    }
+                }
+
+
+            @media (max-width: 750px) {
+                    .aboutme__inner {
+                        margin: 10rem 0 !important;
+                        width: 100%;
+                    }
+                    .aboutme__inner .right {
+                        width: 100%;
+                    }
+                    .aboutme__inner .right .aboutme__text p {
+                        width: 100%;
+                        padding: 1rem;
+                        line-height: 2.5rem;
+                    }
+                    .aboutme__inner .cards {
+                        flex-wrap: wrap;
+                    }
+                }
+
+
+
+
+              @media (max-width: 407px) {
+                    .fixed__navbar .item svg {
+                        width: 18px!important;
+                        height: 18px!important;
+                    }
+                }
+     
+                
+              
+                
+                @media (max-width: 462px) {
+                    .aboutme__inner .left img {
+                        height: 50vh!important;
+                        border-radius: 30px!important;
+                    }
+                }
+
+
+                  @media (max-width: 460px) {
+                    .portfolio__inner .gallery .card {
+                        width: 18rem;
+                    }}
+
+
+                    @media (max-width: 448px) {
+                    .homebar__image img {
+                        height: 35vh;
+                    }
+                }
+
+
+                      @media (max-width: 344px) {
+                    .my__abilities-inner {
+                        gap: 0rem;
+                    }
+                    .my__abilities-inner .boxes {
+                        transform: scale(0.85);
+                    }
+                }
+
+                  
