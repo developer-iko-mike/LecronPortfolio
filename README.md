@@ -38,7 +38,7 @@
 ## 🚀 شروع فوری
 ```bash
 # کلون کردن ریپازیتوری
-git clone https://github.com/yourusername/LecronPortfolio.git
+git clone https://github.com/developer-iko-mike/LecronPortfolio.git
 
 # اجرای پروژه
 # فقط فایل index.html رو باز کنین! 🎉
