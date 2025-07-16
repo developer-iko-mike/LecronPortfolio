@@ -14,7 +14,8 @@
 <div align="center"><img src="./assets/preview.gif" alt="preview gif"/></div>
 
 ## 🎥 پیش نمایش زنده
-[![مشاهده دمو](https://img.shields.io/badge/online-view_demo-B3FE4?style=for-the-badge&logo=starship&logoColor=white)](https://lecron.ir/demo)
+[![مشاهده دمو](https://img.shields.io/badge/online-view_demo-B3FE4?style=for-the-badge&logo=starship&logoColor=white)](https://developer-iko-mike.github.io/LecronPortfolio/)
+
 *تجربه کاربری جادویی با انیمیشن‌های نرم و روان ✨*
 
 *تجربه کاربری جادویی با انیمیشن‌های نرم و روان ✨*
